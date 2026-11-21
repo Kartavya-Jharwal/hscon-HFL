@@ -360,8 +360,6 @@ pre.cmd { background: var(--ink); color: var(--paper); padding: 0.8rem 1rem; bor
   .hero-line:nth-child(2) { animation-delay: .32s; }
   .hero-actions { animation-delay: .7s; }
   .hero-meta { animation-delay: .85s; }
-  .reveal-section { opacity: 0; transform: translateY(32px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
-  .reveal-section.is-visible { opacity: 1; transform: none; }
 }
 @media (max-width: 900px) {
   .landing-page .nav { gap: 1rem; }
