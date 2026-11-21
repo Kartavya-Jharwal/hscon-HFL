@@ -1,0 +1,40 @@
+{
+  "name": "HSCON",
+  "full": "The Sustainability Conference ’26",
+  "host": "Hult Sustainability Society",
+  "tagline": "Speakers in fashion, finance, diplomacy, tech and more. Breakfast and lunch included.",
+  "dateLabel": "21 November 2026",
+  "time": "10:00–16:00",
+  "venue": "Hult UG Campus",
+  "address": "35 Commercial Road, London E1 1LD",
+  "repo": "",
+  "partners": ["Hult Founders Lab", "Hult AI Collective", "Business of Style", "Hult Asian Society", "Social Impact Club", "Latam Society", "Women in Business"],
+  "agenda": [
+    { "time": "10:00-10:30", "session": "Arrival & breakfast", "speaker": "-", "href": "#experience" },
+    { "time": "10:30–11:00", "session": "Fashion", "speaker": "John Atcheson" },
+    { "time": "11:00–12:00", "session": "Sustainability Panel", "speaker": "Natasha Turner, Amanda Brasil-Leigh & Dr. Stephanie Daher" },
+    { "time": "12:00-13:00", "session": "Lunch", "speaker": "-", "href": "#experience" },
+    { "time": "13:00–13:30", "session": "Global Affairs", "speaker": "Nicole Jacobo" },
+    { "time": "13:30–14:30", "session": "Consumer Goods", "speaker": "Lemonaid" },
+    { "time": "14:30–15:30", "session": "Tech & Start-ups", "speaker": "HFL", "href": "session/", "highlight": true },
+    { "time": "15:30–16:00", "session": "Closing", "speaker": "—" }
+  ],
+  "links": [
+    { "label": "Closing the Loop Wordle", "note": "Guess a five-letter word about using resources again", "href": "wordle/" },
+    { "label": "HSCON Connections", "note": "Group ideas from circularity and the conference tracks", "href": "connections/" },
+    { "label": "Paper Toss", "note": "Flick the cup into the recycling bin in 3D", "href": "cup-toss/" },
+    { "label": "Tech & Start-ups session", "note": "Facilitator run of show and break games", "href": "session/" },
+    { "label": "Pitch scoreboard", "note": "Teams, scoring, ranking and timer", "href": "pitch/" },
+    { "label": "Partner presentation (PDF)", "note": "Conference partner deck", "href": "slides/HSCON_Partner_Presentation.pdf" }
+  ],
+  "session": [
+    { "min": 4, "title": "Intro", "detail": "HSCON, HFL and the sustainability tech theme.", "kind": "talk" },
+    { "min": 7, "title": "Break game warm-up", "detail": "Invite attendees to try Wordle, Connections or Paper Toss on the event site.", "kind": "game" },
+    { "min": 6, "title": "Circular economy and carbon credits", "detail": "Connect the economics and finance vocabulary to real decisions.", "kind": "talk" },
+    { "min": 6, "title": "Connections", "detail": "Group circularity and conference themes, then discuss the links.", "kind": "game" },
+    { "min": 4, "title": "AI footprint and frugal innovation", "detail": "Two more trends, then the mini pitch prompt.", "kind": "talk" },
+    { "min": 20, "title": "Breakout: mini pitch", "detail": "What is the idea? Who is it for? Where does it work? Why now? Pitch it.", "kind": "breakout" },
+    { "min": 10, "title": "Pitch and score", "detail": "Teams present. Score What, Who, Where, Why and Pitch on the host scoreboard.", "kind": "score" },
+    { "min": 3, "title": "Winners and close", "detail": "Reveal results, give the gift and point people back to the event site.", "kind": "talk" }
+  ]
+}

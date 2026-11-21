@@ -1,0 +1,11 @@
+node_modules/
+dist/
+artifacts/
+.env
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+
+# Previous platform checkout is kept locally while its live server is running.
+Open-Party-Lab/

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>HSCON Pitch scoreboard</title>
+  <meta name="description" content="HSCON, the Hult Sustainability Conference by The Sustainability Society. Agenda, slides and games.">
+  <meta name="theme-color" content="#f6f0e3">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 28C4 12 14 4 28 4c0 14-8 24-24 24z' fill='%23d62839'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../src/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="../">HSCON</a>
+    <nav aria-label="Main">
+      <a href="../#agenda">Agenda</a>
+      <a href="../session/">Tech &amp; Start-ups</a>
+      <a href="../connections/">Connections</a>
+      <a href="../pitch/">Pitch scoreboard</a>
+    </nav>
+  </header>
+  <main>
+    <p class="eyebrow">Tech &amp; Start-ups · Mini pitch</p>
+    <h1>Pitch scoreboard</h1>
+    <div class="tabs" role="tablist">
+      <button role="tab" id="tab-teams" aria-selected="true" aria-controls="panel-teams">Teams</button>
+      <button role="tab" id="tab-timer" aria-selected="false" aria-controls="panel-timer">Timer</button>
+      <button role="tab" id="tab-results" aria-selected="false" aria-controls="panel-results">Results</button>
+    </div>
+    <section id="panel-teams" role="tabpanel" aria-labelledby="tab-teams">
+      <form class="row" id="add-form" autocomplete="off">
+        <input type="number" id="add-number" min="1" aria-label="Team number" style="width:6rem">
+        <input type="text" id="add-name" placeholder="Team name" aria-label="Team name" style="flex:1;min-width:10rem">
+        <button class="btn primary" type="submit">Add team</button>
+      </form>
+      <p class="muted">Score each team 0 to 5 on What, Who, Where, Why and Pitch. Everything is saved in this browser.</p>
+      <div id="teams"></div>
+    </section>
+    <section id="panel-timer" role="tabpanel" aria-labelledby="tab-timer" hidden>
+      <div class="timer-face" id="timer-face">20:00</div>
+      <div class="row" style="justify-content:center">
+        <button class="btn primary" id="timer-toggle" type="button">Start</button>
+        <button class="btn" id="timer-minus" type="button">−1 min</button>
+        <button class="btn" id="timer-plus" type="button">+1 min</button>
+        <button class="btn" id="timer-reset" type="button">Reset 20:00</button>
+      </div>
+    </section>
+    <section id="panel-results" role="tabpanel" aria-labelledby="tab-results" hidden>
+      <ol class="rank" id="rank"></ol>
+      <div class="row">
+        <button class="btn primary" id="reveal" type="button">Reveal winners</button>
+        <button class="btn" id="copy" type="button">Copy results</button>
+        <button class="btn" id="copy-link" type="button">Copy visitor link</button>
+        <button class="btn" id="wipe" type="button">Clear all teams</button>
+      </div>
+      <div class="podium" id="podium" aria-live="polite"></div>
+    </section>
+  </main>
+  <script type="module" src="../src/pitch/main.ts"></script>
+</body>
+</html>

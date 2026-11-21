@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>HSCON Tech & Start-ups · Run of show</title>
+  <meta name="description" content="HSCON, the Hult Sustainability Conference by The Sustainability Society. Agenda, slides and games.">
+  <meta name="theme-color" content="#f6f0e3">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 28C4 12 14 4 28 4c0 14-8 24-24 24z' fill='%23d62839'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../src/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="../">HSCON</a>
+    <nav aria-label="Main">
+      <a href="../#agenda">Agenda</a>
+      <a href="../session/">Tech &amp; Start-ups</a>
+      <a href="../connections/">Connections</a>
+      <a href="../pitch/">Pitch scoreboard</a>
+    </nav>
+  </header>
+  <main>
+    <p class="eyebrow">Facilitator view</p>
+    <h1>Tech &amp; Start-ups: the hour</h1>
+    <p class="lead">Intro, party games on phones, start-up jargon and trends, a 20-minute mini pitch, then scoring and a small gift.</p>
+    <div class="card"><div class="k">Elapsed</div><div class="clock" id="clock">00:00</div>
+      <div class="row"><button class="btn primary" id="go" type="button">Start</button><button class="btn" id="reset" type="button">Reset</button><span class="muted" id="next"></span></div></div>
+    <ol class="blocks" id="blocks"></ol>
+    <h2>Break games and scoring</h2>
+    <p>These games run on this static site. Share the site link with attendees; each game opens on a phone or laptop.</p>
+    <div class="row"><a class="btn" href="../pitch/">Pitch scoreboard</a><a class="btn" href="../connections/">Connections</a><a class="btn" href="../cup-toss/">Paper Toss</a><a class="btn" href="../wordle/">Wordle</a></div>
+  </main>
+  <script type="module" src="../src/session/main.ts"></script>
+</body>
+</html>

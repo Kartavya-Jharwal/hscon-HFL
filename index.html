@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>HSCON 2026 — Closing the Loop</title>
+  <meta name="description" content="Join the Hult Sustainability Conference in London on 21 November 2026. Explore the programme, speakers and partners for Closing the Loop.">
+  <meta name="theme-color" content="#143b2b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 28C4 12 14 4 28 4c0 14-8 24-24 24z' fill='%23d62839'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body class="landing-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="nav">
+    <a class="brand" href="./">HSCON</a>
+    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#agenda">Programme</a><a href="#partners">Partners</a><a href="#experience">Explore</a></nav>
+    <a class="nav-cta" href="#experience">Play the games <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="conference-hero" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <div class="hero-garden" id="hero-garden" aria-hidden="true"></div>
+        <p class="hero-kicker"><span class="kicker-rule"></span> Hult Sustainability Society presents</p>
+        <p class="hero-edition">The Sustainability Conference <span>’26</span></p>
+        <h1 id="hero-heading"><span class="hero-line">Closing</span><span class="hero-line">the <em data-flower-wordmark="hero">Loop.</em></span></h1>
+        <p class="hero-intro" data-typewriter>A day of ideas and conversations on what a more circular future asks of us.</p>
+        <div class="hero-actions"><a class="btn primary" href="#agenda">Explore the programme <span aria-hidden="true">↗</span></a><a class="hero-text-link" href="#experience">Play during the break <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-meta"><span>21 November 2026</span><span>10:00–16:00</span><span>London, UK</span></div>
+      </div>
+      <div class="hero-art">
+        <video class="hero-video" id="hero-video" src="assets/moss-hscon.mp4" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+        <div class="hero-art-caption"><span>HSCON / 2026</span><button class="video-toggle" id="hero-video-toggle" type="button" aria-label="Pause hero video">Pause motion</button></div>
+      </div>
+    </section>
+    <section class="conference-intro" id="about" aria-labelledby="about-heading">
+      <div><p class="section-index">01 / The idea</p><h2 id="about-heading">Progress is a<br><em>collective act.</em></h2></div>
+      <div class="intro-body"><p>Closing the Loop brings together perspectives from fashion, global affairs, consumer goods and technology to explore sustainability through the decisions we make every day.</p><p>Hear from the people working across these fields, meet fellow attendees and take part in a programme built for conversation.</p><a class="inline-link" href="#agenda">Discover the day <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section class="programme-section" id="agenda" aria-labelledby="agenda-heading">
+      <div class="section-heading"><div><p class="section-index">02 / The programme</p><h2 id="agenda-heading">A day to see<br><em>the whole picture.</em></h2></div><p>Saturday 21 November<br>Hult UG Campus, London</p></div>
+      <div class="agenda-list" id="agenda-rows"></div>
+      <p class="programme-note">Programme details may change. Times shown are local to London.</p>
+    </section>
+    <section class="experience-section" id="experience" aria-labelledby="experience-heading">
+      <div class="section-heading"><div><p class="section-index">03 / Breakfast &amp; lunch</p><h2 id="experience-heading">A little play<br><em>between ideas.</em></h2></div><p>Three short experiences to pick up over breakfast or lunch. Find a word, connect the themes, then close the loop with a toss.</p></div>
+      <p class="break-collection-status" id="break-collection-status" aria-live="polite"></p>
+      <div id="game-cards" class="game-hub"></div><div class="row live-links" id="live-links" hidden></div>
+    </section>
+    <section class="partners-section" id="partners" aria-labelledby="partners-heading"><p class="section-index">04 / Together with</p><h2 id="partners-heading">The clubs behind HSCON</h2><p>Seven communities bringing different perspectives to the room.</p><div class="partner-grid" id="partner-grid"></div></section>
+    <section class="resources-section" aria-labelledby="resources-heading"><p class="section-index">Keep exploring</p><h2 id="resources-heading">Event resources</h2><ul class="links" id="links"></ul></section>
+  </main>
+  <footer class="conference-footer"><div><strong>HSCON <span>’26</span></strong><p>Closing the Loop<br>Hult Sustainability Society</p></div><p>Built with <a href="https://github.com/adewale/garten">Garten</a>. Connections rules adapted from <a href="https://github.com/srefsland/nyt-connections-clone">srefsland/nyt-connections-clone</a> (MIT). Party games by <a href="https://github.com/Hartwich/Open-Party-Lab">Open Party Lab</a> (Apache-2.0).</p><a href="#main">Back to top ↑</a></footer>
+  <script type="module" src="./src/landing.ts"></script>
+</body>
+</html>

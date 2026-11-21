@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>HSCON Connections</title>
+  <meta name="description" content="HSCON, the Hult Sustainability Conference by The Sustainability Society. Agenda, slides and games.">
+  <meta name="theme-color" content="#f6f0e3">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 28C4 12 14 4 28 4c0 14-8 24-24 24z' fill='%23d62839'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../src/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="../">HSCON</a>
+    <nav aria-label="Games">
+      <a href="../">Home</a>
+      <a href="../wordle/">Wordle</a>
+      <a href="../connections/" aria-current="page">Connections</a>
+      <a href="../cup-toss/">Paper Toss</a>
+    </nav>
+  </header>
+  <main class="narrow game-page">
+    <p class="eyebrow">Breakfast &amp; lunch / 02 of 03</p>
+    <h1>Connections</h1>
+    <p class="lead" id="blurb"></p>
+    <p class="muted">Select four related words and submit. You get four mistakes before the answers appear. Each group reveals a thought to take into the conference.</p>
+    <label class="field" for="picker"><span>Choose a puzzle</span><select id="picker"></select></label>
+    <div class="game-meta"><span id="connections-progress">0 of 4 groups</span><span id="connections-selected">0 of 4 selected</span></div>
+    <div class="status" id="status" role="status" aria-live="polite"></div>
+    <div class="solved" id="solved"></div>
+    <div class="grid" id="grid" role="group" aria-label="Words"></div>
+    <div class="dock">
+    <div class="pips" id="pips" aria-live="polite"></div>
+    <div class="row actions">
+      <button class="btn" id="shuffle" type="button">Shuffle</button>
+      <button class="btn" id="clear" type="button">Deselect all</button>
+      <button class="btn primary" id="submit" type="button" disabled>Submit</button>
+      <button class="btn" id="restart" type="button">Restart</button>
+    </div>
+    <div class="row game-footer"><a class="btn" href="../cup-toss/">Next: Paper Toss →</a></div>
+    </div>
+    <details class="builder" id="builder">
+      <summary>Make a puzzle (for the sponsors round)</summary>
+      <p class="muted">One category per row: a name, then four words separated by commas. Row 1 is the easiest (yellow), row 4 the hardest (red). You get a shareable link. No server needed.</p>
+      <div id="builder-rows"></div>
+      <p class="err" id="builder-err" role="alert"></p>
+      <div class="row"><button class="btn primary" id="builder-make" type="button">Make link</button></div>
+      <div class="field" id="builder-out" hidden>
+        <label for="builder-url">Share link</label>
+        <input type="text" id="builder-url" readonly>
+        <div class="row"><button class="btn small" id="builder-copy" type="button">Copy</button><a class="btn small" id="builder-play" href="#">Play it</a></div>
+      </div>
+    </details>
+  </main>
+  <script type="module" src="../src/connections/main.ts"></script>
+</body>
+</html>

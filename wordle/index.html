@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>HSCON Closing the Loop Wordle</title><link rel="stylesheet" href="../src/styles.css"></head><body>
+<header class="nav"><a class="brand" href="../">HSCON</a><nav aria-label="Games"><a href="../">Home</a><a href="../wordle/" aria-current="page">Wordle</a><a href="../connections/">Connections</a><a href="../cup-toss/">Paper Toss</a></nav></header>
+<main class="narrow game-page"><p class="eyebrow">Breakfast &amp; lunch / 01 of 03</p><h1>Closing the Loop Wordle</h1><p class="lead">Start with one idea. Guess a five-letter word about keeping resources in use. Green means the right place; gold means the letter belongs elsewhere.</p>
+<div class="quiz-context"><span>01 / Find the word</span><p>What does a circular future ask us to keep in motion?</p><button class="text-button" id="wordle-hint" type="button" aria-expanded="false" aria-controls="wordle-clue">Need a clue?</button><p id="wordle-clue" class="quiz-clue" hidden></p></div>
+<div class="game-meta"><span id="wordle-progress">Round 1 · 1 of 6 guesses</span><span>5 letters</span></div>
+<form id="wordle-form" class="wordle-form"><label for="wordle-guess">Your guess</label><div class="row"><input id="wordle-guess" type="text" maxlength="5" pattern="[A-Za-z]{5}" aria-label="Five-letter guess" autocomplete="off" autocapitalize="characters" spellcheck="false" required><button class="btn primary">Guess</button></div></form>
+<p id="wordle-status" class="status" role="status" aria-live="polite">Type a five-letter word to begin.</p>
+<div id="wordle-grid" class="wordle-grid" role="grid" aria-label="Guesses"></div>
+<div id="wordle-keyboard" class="wordle-keyboard" aria-label="Letter keyboard"></div><div class="row keyboard-actions"><button class="btn small" id="wordle-back" type="button">⌫ Delete</button><button class="btn small" id="wordle-enter" type="button">Enter ↵</button></div>
+<div class="row game-footer"><button class="btn" id="wordle-new" type="button">New word</button><a class="btn" href="../connections/">Next: Connections →</a></div>
+<p class="muted">Your round stays in this browser if you refresh.</p></main><script type="module" src="../src/wordle/main.ts"></script></body></html>

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "closing-the-loop",
+    "title": "Closing the Loop",
+    "blurb": "Connect the actions, materials and systems that keep resources in use.",
+    "categories": [
+      { "name": "Keep an item in use", "words": ["REPAIR", "REUSE", "REFILL", "REFURBISH"], "level": 0, "insight": "Keeping a product useful for longer can reduce the need to make a replacement." },
+      { "name": "Materials to recover", "words": ["PAPER", "GLASS", "METAL", "PLASTIC"], "level": 1, "insight": "Recovery starts with knowing what a material is and where it can go next." },
+      { "name": "Circular business models", "words": ["RENTAL", "RESALE", "LEASING", "TAKEBACK"], "level": 2, "insight": "These models give businesses a reason to keep products in use beyond a first sale." },
+      { "name": "Steps in a recycling loop", "words": ["COLLECT", "SORT", "PROCESS", "REMAKE"], "level": 3, "insight": "Collection is only the start; sorting and remaking close the material loop." }
+    ]
+  },
+  {
+    "id": "hscon-tracks",
+    "title": "Across HSCON",
+    "blurb": "Four groups from the conference's fashion, finance, diplomacy and tech sessions.",
+    "categories": [
+      { "name": "Fashion fibres", "words": ["COTTON", "LINEN", "WOOL", "HEMP"], "level": 0, "insight": "Material choice is one part of a garment's full life, from sourcing to reuse." },
+      { "name": "Ways to finance an idea", "words": ["BOND", "LOAN", "GRANT", "EQUITY"], "level": 1, "insight": "Different funding routes change who carries risk and who shares the return." },
+      { "name": "Diplomacy terms", "words": ["TREATY", "SUMMIT", "ENVOY", "EMBASSY"], "level": 2, "insight": "Cross-border climate action depends on negotiation as much as technology." },
+      { "name": "Clean technology components", "words": ["BATTERY", "TURBINE", "INVERTER", "SENSOR"], "level": 3, "insight": "Technology works as a system: generation, storage, conversion and measurement." }
+    ]
+  }
+]
